@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "Shop_Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Shop_Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shop_Entities.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Shop_Entities/1.0.0": {
+      "type": "project",
+      "path": "../Shop_Entities/Shop_Entities.csproj",
+      "msbuildProject": "../Shop_Entities/Shop_Entities.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "Shop_Entities >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\sukra\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\sukra\\source\\repos\\Shopping_Devnot\\Shop_Entities\\Shop_Entities.csproj": {
+              "projectPath": "C:\\Users\\sukra\\source\\repos\\Shopping_Devnot\\Shop_Entities\\Shop_Entities.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
